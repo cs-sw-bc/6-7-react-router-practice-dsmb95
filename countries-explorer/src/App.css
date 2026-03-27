@@ -1,4 +1,38 @@
+* {
+  background-color: gray;
+  color: white;
+}
+
 .home-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #444;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  background: #f0f0f0;
+}
+
+.nav-link.active {
+  background: #111;
+  color: #fff;
+}
+

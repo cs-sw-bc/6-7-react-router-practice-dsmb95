@@ -17,11 +17,11 @@ function App() {
 
   return (
     <>
-      <div className='home-card'>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/build">Build</NavLink>
-        <NavLink to="/About">About</NavLink>
-      </div>
+      <nav>
+        <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>
+        <NavLink to="/build" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Build</NavLink>
+        <NavLink to="/About" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>About</NavLink>
+      </nav>
 
       <Routes>
         <Route path="/" element={<Home/>}></Route>
